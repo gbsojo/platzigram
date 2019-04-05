@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.gbsojo.platzigram.view.AppActivity;
 import com.gbsojo.platzigram.view.SignUpActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -23,6 +24,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void login (View view) {
-        Toast.makeText(getBaseContext(), R.string.login, Toast.LENGTH_LONG);
+        // Toast.makeText(getBaseContext(), R.string.login, Toast.LENGTH_LONG);
+        Intent intent = new Intent(this, AppActivity.class);
+        startActivity(intent);
     }
 }

@@ -16,4 +16,17 @@
     <string name="elapsed_time_pos">días</string>
     <string name="likes_qty">10</string>
     <string name="like">Me Gusta</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_timeline">Home</string>
+    <string name="title_profile">Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_reference">ReferenceActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">"Material is the metaphor.\n\n"</string>
+    <string name="action_settings">Settings</string>
 </resources>
