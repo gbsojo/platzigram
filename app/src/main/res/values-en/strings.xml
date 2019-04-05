@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Platzigram</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="not_registered_question">Haven\'t signed up yet?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="password_confirm">Confirm password</string>
+    <string name="sign_up_cta">Únete</string>
+    <string name="title_sign_up">Sign-up</string>
+    <string name="elapsed_time_pre">Hace</string>
+    <string name="elapsed_time">4</string>
+    <string name="elapsed_time_pos">días</string>
+    <string name="likes_qty">10</string>
+    <string name="like">Me Gusta</string>
+</resources>
