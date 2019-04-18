@@ -61,7 +61,7 @@ public class TimelineFragment extends Fragment {
 
     public ArrayList<Post> getPosts() {
         ArrayList<Post> posts = new ArrayList<Post>();
-        posts.add(new Post("https://www.kissottawa.com/wp-content/uploads/sites/9/2017/12/CADA153-1120_2017_000134-1013x576.jpg", "p!nk", new DateTime(2004, 12, 25, 0, 0, 0, 0), 128734));
+        posts.add(new Post("https://www.kissottawa.com/wp-content/uploads/sites/9/2017/12/CADA153-1120_2017_000134-1013x576.jpg", "p!nk", new DateTime(2018, 12, 25, 0, 0, 0, 0), 128734));
         posts.add(new Post("https://images.radio.com/aiu-media/Pink%2520MTV.jpg", "p!nk", new DateTime(2004, 12, 25, 0, 0, 0, 0), 128734));
         posts.add(new Post("https://vignette.wikia.nocookie.net/pink/images/0/08/469567_10150920259436398_1987970376_o.jpg/revision/latest?cb=20141222000625", "p!nk", new DateTime(2004, 12, 25, 0, 0, 0, 0), 128734));
         posts.add(new Post("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI2RHqQvk-jI9ykawDyr8WxYGEZz2cP3dfW5vQ-Q6uAgNr5obUMQ", "p!nk", new DateTime(2004, 12, 25, 0, 0, 0, 0), 128734));

@@ -49,14 +49,6 @@
                     android:text="@string/elapsed_time"
                     android:textSize="@dimen/card_minor_info"
                     android:textColor="@android:color/white"/>
-                <TextView
-                    android:id="@+id/elapsed_time_pos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/elapsed_time_pos"
-                    android:textSize="@dimen/card_minor_info"
-                    android:layout_marginLeft="@dimen/text_separation"
-                    android:textColor="@android:color/white"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -68,14 +60,13 @@
                     android:layout_height="wrap_content"
                     android:button="@drawable/checkbox_selector"/>
                 <TextView
-                    android:id="@+id/card_likes_qty"
+                    android:id="@+id/cardview_likes_qty"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/likes_qty"
                     android:textColor="@android:color/white"
                     android:layout_marginHorizontal="@dimen/text_separation"/>
                 <TextView
-                    android:id="@+id/card_likes_qty_pos"
+                    android:id="@+id/cardview_likes_qty_pos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/like"

@@ -1,6 +1,7 @@
 package com.gbsojo.platzigram.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
@@ -12,12 +13,16 @@ import android.widget.TextView;
 
 import com.gbsojo.platzigram.R;
 import com.gbsojo.platzigram.model.Post;
+import com.gbsojo.platzigram.view.PostActivity;
+import com.squareup.picasso.Picasso;
 
 import org.joda.time.DateTime;
 import org.joda.time.Days;
 import org.joda.time.Period;
 
 import java.util.ArrayList;
+
+import 	android.util.Log;
 
 public class PostRecyclerViewAdapter extends RecyclerView.Adapter<PostRecyclerViewAdapter.PostViewHolder> {
 
@@ -43,9 +48,28 @@ public class PostRecyclerViewAdapter extends RecyclerView.Adapter<PostRecyclerVi
         Post post = posts.get(i);
         DateTime today = new DateTime();
         Period period = new Period(post.getDate(), today);
+        int[] periodArr = period.getValues();
+        String[] periodsArr = new String[]{"years", "months", "days", "hours"};
+        String elapsedTxt = null;
+
+        for (int pos = 0; pos < 4; pos++) {
+            if (periodArr[pos] > 0) {
+                elapsedTxt = Integer.toString(periodArr[pos]) + " " + periodsArr[pos];
+                break;
+            }
+        }
         postViewHolder.usernameView.setText(post.getUsername());
         postViewHolder.likesView.setText(Integer.toString(post.getLikes()));
-        postViewHolder.elapsedTimeView.setText(period.toString());
+        postViewHolder.elapsedTimeView.setText(elapsedTxt);
+        Picasso.with(activity).load(post.getPicture()).into(postViewHolder.pictureView);
+
+        postViewHolder.pictureView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view) {
+                Intent intent = new Intent(activity, PostActivity.class);
+                activity.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -65,7 +89,7 @@ public class PostRecyclerViewAdapter extends RecyclerView.Adapter<PostRecyclerVi
             pictureView = itemView.findViewById(R.id.cardview_picture);
             usernameView = itemView.findViewById(R.id.cardview_username);
             elapsedTimeView = itemView.findViewById(R.id.elapsed_time);
-            likesView = itemView.findViewById(R.id.cardview_like);
+            likesView = itemView.findViewById(R.id.cardview_likes_qty);
         }
     }
 }

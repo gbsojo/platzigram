@@ -13,4 +13,9 @@
     <dimen name="card_username">20sp</dimen>
     <dimen name="card_minor_info">15sp</dimen>
     <dimen name="bottom_bar_height">56dp</dimen>
+    <dimen name="app_bar_collapsing_height">260dp</dimen>
+    <dimen name="h1">25sp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="h2">23sp</dimen>
+    <dimen name="h3">20sp</dimen>
 </resources>
